@@ -19,7 +19,9 @@
 		    wait-ms = <40>;
 		    tap-ms = <40>;
 		    bindings
-			= <&macro_tap &kp LCTRL &kp LALT &kp PAUSE_BREAK>
+			= <&macro_press &kp LCTRL &kp LALT>
+			, <&macro_tap &kp PAUSE_BREAK>
+			, <&macro_release &kp LCTRL &kp LALT>
 			;
 		};
     	};
@@ -44,7 +46,7 @@
 		three {
 			//PREV | PLAY/PAUSE | NEXT
 			bindings = <&kp C_MUTE &lt 4 F13 &minimize_remote>;
-			sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+			sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
 		};
 		shift {
 			//PREV | PLAY/PAUSE | NEXT
