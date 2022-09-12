@@ -50,7 +50,7 @@
 		};
 		shift {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&bt BT_CLR &trans &rgb_ug RGB_TOG>;
+			bindings = <&bootloader &trans &rgb_ug RGB_TOG>;
 			sensor-bindings = <&def_lshft>;
 		};
 	};
