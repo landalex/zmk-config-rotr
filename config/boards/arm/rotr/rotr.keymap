@@ -9,8 +9,23 @@
 &def_lshft {
 	triggers-per-rotation = <4>;
 };
+&inc_dec_kp_sensitive {
+	triggers-per-rotation = <128>;
+};
 
 / {
+	macros {
+		minimize_remote: minimize_remote {
+		    label = "ZM_minimize_remote";
+		    compatible = "zmk,behavior-macro";
+		    #binding-cells = <0>;
+		    wait-ms = <40>;
+		    tap-ms = <40>;
+		    bindings
+			= <&macro_tap &kp LCTRL &kp LALT &kp PAUSE_BREAK>
+			;
+		};
+    	};
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -31,7 +46,8 @@
 		};
 		three {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&kp C_MUTE &lt 4 F13 &kp C_PP>;
+			bindings = <&kp C_MUTE &lt 4 F13 &minimize_remote>;
+			sensor-bindings = <&inc_dec_kp_sensitive C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
 		};
 		shift {
 			//PREV | PLAY/PAUSE | NEXT
