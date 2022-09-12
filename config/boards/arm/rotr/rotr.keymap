@@ -4,13 +4,10 @@
 #include <dt-bindings/zmk/bt.h>
 
 &inc_dec_kp {
-	triggers-per-rotation = <4>;
+	triggers-per-rotation = <16>;
 };
 &def_lshft {
 	triggers-per-rotation = <4>;
-};
-&inc_dec_kp_sensitive {
-	triggers-per-rotation = <128>;
 };
 
 / {
@@ -47,7 +44,7 @@
 		three {
 			//PREV | PLAY/PAUSE | NEXT
 			bindings = <&kp C_MUTE &lt 4 F13 &minimize_remote>;
-			sensor-bindings = <&inc_dec_kp_sensitive C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+			sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
 		};
 		shift {
 			//PREV | PLAY/PAUSE | NEXT
