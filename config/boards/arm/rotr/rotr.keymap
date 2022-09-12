@@ -46,7 +46,7 @@
 		three {
 			//PREV | PLAY/PAUSE | NEXT
 			bindings = <&kp C_MUTE &lt 4 F13 &minimize_remote>;
-			sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+			sensor-bindings = <&inc_dec_kp DOWN UP>;
 		};
 		shift {
 			//PREV | PLAY/PAUSE | NEXT
