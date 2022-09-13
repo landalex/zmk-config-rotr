@@ -47,9 +47,9 @@
 		compatible = "zmk,keymap";
 
 		default_layer {
-			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&kp C_MUTE &lt 4 F13 &kp C_PP>;
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+			//LEFT DESKTOP | MINIMIZE REMOTE DESKTOP | RIGHT DESKTOP
+			bindings = <&left_desktop &minimize_remote &right_desktop>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
 		one {
 			//PREV | PLAY/PAUSE | NEXT
@@ -63,8 +63,8 @@
 		};
 		three {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&left_desktop &lt 4 &minimize_remote &right_desktop>;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+			bindings = <&kp C_MUTE &lt 4 F13 &kp C_PP>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		shift {
 			//PREV | PLAY/PAUSE | NEXT
