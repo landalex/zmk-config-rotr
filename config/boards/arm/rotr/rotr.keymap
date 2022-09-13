@@ -48,7 +48,7 @@
 
 		default_layer {
 			//LEFT DESKTOP | MINIMIZE REMOTE DESKTOP | RIGHT DESKTOP
-			bindings = <&left_desktop &minimize_remote &right_desktop>;
+			bindings = <&left_desktop &lt 4 &minimize_remote &right_desktop>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		one {
@@ -68,7 +68,7 @@
 		};
 		shift {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&bootloader &trans &rgb_ug RGB_TOG>;
+			bindings = <&bootloader &trans &bt BT_CLR>;
 			sensor-bindings = <&def_lshft>;
 		};
 	};
