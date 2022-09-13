@@ -22,6 +22,26 @@
 			, <&macro_release &kp LCTRL &kp LALT>
 			;
 		};
+		left_desktop: left_desktop {
+		    label = "left_desktop";
+		    compatible = "zmk,behavior-macro";
+		    #binding-cells = <0>;
+		    bindings
+			= <&macro_press &kp LCTRL &kp LCMD>
+			, <&macro_tap &kp LEFT>
+			, <&macro_release &kp LCTRL &kp LCMD>
+			;
+        	};
+		right_desktop: right_desktop {
+		    label = "right_desktop";
+		    compatible = "zmk,behavior-macro";
+		    #binding-cells = <0>;
+		    bindings
+			= <&macro_press &kp LCTRL &kp LCMD>
+			, <&macro_tap &kp RIGHT>
+			, <&macro_release &kp LCTRL &kp LCMD>
+			;
+        	};
     	};
 	keymap {
 		compatible = "zmk,keymap";
@@ -43,8 +63,8 @@
 		};
 		three {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&minimize_remote &lt 4 F13 &kp C_MUTE>;
-			sensor-bindings = <&inc_dec_kp DOWN UP>;
+			bindings = <&left_desktop &lt 4 &minimize_remote &right_desktop>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
 		shift {
 			//PREV | PLAY/PAUSE | NEXT
