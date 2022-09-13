@@ -49,7 +49,7 @@
 		default_layer {
 			//LEFT DESKTOP | MINIMIZE REMOTE DESKTOP | RIGHT DESKTOP
 			bindings = <&left_desktop &minimize_remote &right_desktop>;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		one {
 			//PREV | PLAY/PAUSE | NEXT
