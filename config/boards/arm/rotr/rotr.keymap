@@ -43,7 +43,7 @@
 		};
 		three {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&kp C_MUTE &lt 4 F13 &minimize_remote>;
+			bindings = <&minimize_remote &lt 4 F13 &kp C_MUTE>;
 			sensor-bindings = <&inc_dec_kp DOWN UP>;
 		};
 		shift {
