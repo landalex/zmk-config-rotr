@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/mouse.h>
 
 &inc_dec_kp {
 	triggers-per-rotation = <16>;
@@ -49,7 +50,7 @@
 		default_layer {
 			//LEFT DESKTOP | MINIMIZE REMOTE DESKTOP | RIGHT DESKTOP
 			bindings = <&left_desktop &lt 4 &minimize_remote &right_desktop>;
-			sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+			sensor-bindings = <&inc_dec_kp SCROLL_DOWN SCROLL_UP>;
 		};
 		one {
 			//PREV | PLAY/PAUSE | NEXT
