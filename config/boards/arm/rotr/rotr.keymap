@@ -12,7 +12,7 @@
 
 / {
 	macros {
-		minimize_remote: minimize_remote {
+		swap_to_personal: swap_to_personal {
 		    label = "minimize_remote";
 		    compatible = "zmk,behavior-macro";
 		    #binding-cells = <0>;
@@ -21,7 +21,7 @@
 			, <&macro_tap &kp HOME>
 			, <&macro_release &kp LCTRL &kp LALT>
 			, <&macro_press &kp LCTRL &kp LCMD>
-			, <&macro_tap &kp RIGHT>
+			, <&macro_tap &kp LEFT>
 			, <&macro_release &kp LCTRL &kp LCMD>
 			;
 		};
@@ -51,7 +51,7 @@
 
 		default_layer {
 			//LEFT DESKTOP | MINIMIZE REMOTE DESKTOP | RIGHT DESKTOP
-			bindings = <&minimize_remote &lt 4 F13 &right_desktop>;
+			bindings = <&swap_to_personal &lt 4 F13 &right_desktop>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		one {
