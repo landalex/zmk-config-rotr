@@ -18,7 +18,7 @@
 		    #binding-cells = <0>;
 		    bindings
 			= <&macro_press &kp LCTRL &kp LALT>
-			, <&macro_tap &kp PAUSE_BREAK>
+			, <&macro_tap &kp HOME>
 			, <&macro_release &kp LCTRL &kp LALT>
 			;
 		};
@@ -48,7 +48,7 @@
 
 		default_layer {
 			//LEFT DESKTOP | MINIMIZE REMOTE DESKTOP | RIGHT DESKTOP
-			bindings = <&left_desktop &lt 4 &minimize_remote &right_desktop>;
+			bindings = <&minimize_remote &lt 4 F13 &right_desktop>;
 			sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
 		};
 		one {
