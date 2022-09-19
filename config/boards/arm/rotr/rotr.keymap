@@ -20,6 +20,9 @@
 			= <&macro_press &kp LCTRL &kp LALT>
 			, <&macro_tap &kp HOME>
 			, <&macro_release &kp LCTRL &kp LALT>
+			, <&macro_press &kp LCTRL &kp LCMD>
+			, <&macro_tap &kp RIGHT>
+			, <&macro_release &kp LCTRL &kp LCMD>
 			;
 		};
 		left_desktop: left_desktop {
