@@ -19,7 +19,7 @@
 		    wait-ms = <10>;
 		    tap-ms = <10>;
 		    bindings
-			, <&macro_press &kp LCTRL &kp LALT>
+			= <&macro_press &kp LCTRL &kp LALT>
 			, <&macro_tap &kp HOME>
 			, <&macro_release &kp LCTRL &kp LALT>
 			, <&macro_press &kp LCTRL &kp LCMD>
