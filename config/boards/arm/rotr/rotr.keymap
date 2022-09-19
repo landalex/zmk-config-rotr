@@ -16,6 +16,8 @@
 		    label = "minimize_remote";
 		    compatible = "zmk,behavior-macro";
 		    #binding-cells = <0>;
+		    wait-ms = <40>;
+		    tap-ms = <40>;
 		    bindings
 			= <&macro_press &kp LCTRL &kp LALT>
 			, <&macro_tap &kp HOME>
@@ -29,6 +31,8 @@
 		    label = "left_desktop";
 		    compatible = "zmk,behavior-macro";
 		    #binding-cells = <0>;
+		    wait-ms = <40>;
+		    tap-ms = <40>;
 		    bindings
 			= <&macro_press &kp LCTRL &kp LCMD>
 			, <&macro_tap &kp LEFT>
@@ -39,6 +43,8 @@
 		    label = "right_desktop";
 		    compatible = "zmk,behavior-macro";
 		    #binding-cells = <0>;
+		    wait-ms = <40>;
+		    tap-ms = <40>;
 		    bindings
 			= <&macro_press &kp LCTRL &kp LCMD>
 			, <&macro_tap &kp RIGHT>
