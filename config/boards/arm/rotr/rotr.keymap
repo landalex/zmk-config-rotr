@@ -4,10 +4,10 @@
 #include <dt-bindings/zmk/bt.h>
 
 &inc_dec_kp {
-	triggers-per-rotation = <16>;
+	triggers-per-rotation = <32>;
 };
 &def_lshft {
-	triggers-per-rotation = <4>;
+	triggers-per-rotation = <8>;
 };
 
 / {
@@ -78,7 +78,8 @@
 		shift {
 			//PREV | PLAY/PAUSE | NEXT
 			bindings = <&bootloader &trans &bt BT_CLR>;
-			sensor-bindings = <&def_lshft>;
+			//sensor-bindings = <&def_lshft>;
+			sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
 		};
 	};
 };
