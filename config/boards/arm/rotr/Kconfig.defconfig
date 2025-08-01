@@ -33,4 +33,7 @@ config ZMK_BATTERY_VOLTAGE_DIVIDER
 config ZMK_KEYBOARD_NAME
 	default "ROTR"
 
+config CONFIG_BT_CTLR_PHY_2M_SUPPORT
+	default n
+
 endif # BOARD_ROTR
